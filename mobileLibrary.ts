@@ -51,4 +51,11 @@ export class MobileLibrary {
         
         return this.totalPrice
     }
+    public printLibrary() {
+        let resultado: string = ""
+        for(let i=0; i< this.mobiles.length; i++){
+            resultado += "This is all my mobiles: "+"\n"+"The characteristics of the mobile "+this.mobiles[i].getName() + " are:"+"\n"+ "  "+ this.mobiles[i].toString()
+        }
+        console.log(resultado + "\n"+ "Price overall:" + this.totalPrice)
+    }
 }
