@@ -19,10 +19,6 @@ export class Mobile {
         this.price = price;
     }
 
-
-    public toString() {
-        console.log("The characteristics of the mobile " + this.name + " are:" + "\n" + "  " + "Name: " + this.name + "\n" + "  " + "Model:" + this.model + "\n" + "  " + "Trademark:" + this.trademark + "\n" + "  " + "SD Size (GB):" + this.sdSize + "\n" + "  " + "Color:" + this.color + "\n" + "  " + "Is 5G?:" + this.is5G + "\n" + "  " + "Number of Cameras:" + this.cameraNumber)
-    }
     public getName(): string {
         return this.name;
     }
@@ -86,5 +82,8 @@ export class Mobile {
 
     public setPrice(price: number) {
         this.price = price;
+    }
+    public toString() {
+        return "The characteristics of the mobile " + this.name + " are:" + "\n" + "  " + "Name: " + this.name + "\n" + "  " + "Model:" + this.model + "\n" + "  " + "Trademark:" + this.trademark + "\n" + "  " + "SD Size (GB):" + this.sdSize + "\n" + "  " + "Color:" + this.color + "\n" + "  " + "Is 5G?:" + this.is5G + "\n" + "  " + "Number of Cameras:" + this.cameraNumber
     }
 }
