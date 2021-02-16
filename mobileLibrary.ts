@@ -2,14 +2,14 @@ import { Mobile } from "./mobile"
 export class MobileLibrary {
     private name: string;
     private location: string;
-    private mobiles: Mobile[]
+    private mobiles: Mobile[];
     private totalPrice: number;
 
-    constructor(name: string, location: string, mobile: Mobile[], totalPrice: number) {
+    constructor(name: string, location: string, mobile: Mobile[]) {
         this.name = name;
         this.location = location;
         this.mobiles = mobile;
-        this.totalPrice = totalPrice;
+        this.totalPrice = this.totalPriceCalculation()
     }
     public getName(): string {
         return this.name;
@@ -42,7 +42,7 @@ export class MobileLibrary {
     public setTotalPrice(totalPrice: number) {
         this.totalPrice = totalPrice;
     }
-    public totalPriceCalculation():number{
+    private totalPriceCalculation():number{
         let price: number = 0
         for(let i = 0; i< this.mobiles.length; i++){
             price = this.mobiles[i].getPrice() + price
