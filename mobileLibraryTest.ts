@@ -6,10 +6,11 @@ let mobile3: Mobile = new Mobile("Samsung Galaxy 10", 10, "Samsung", 32, "plata"
 let mobile4: Mobile = new Mobile ("OnePlus",800, "OnePlus", 64,"azul",true, 3, 355)
 
 let mobiles: Mobile[] = [mobile1,mobile2,mobile3,mobile4];
-let muchosMobiles: MobileLibrary = new MobileLibrary("PhoneLibrary","LemonCity",mobiles,0)
+let muchosMobiles: MobileLibrary = new MobileLibrary("PhoneLibrary","LemonCity",mobiles)
 console.log(muchosMobiles.getLocation())
 console.log(muchosMobiles.getMobiles())
 console.log(muchosMobiles.getName())
-console.log(muchosMobiles.totalPriceCalculation())
-console.log(muchosMobiles.setLocation("Barrio Sesamo"))
+console.log(muchosMobiles.getTotalPrice())
+muchosMobiles.setLocation("Barrio Sesamo")
 console.log(muchosMobiles.getLocation())
+muchosMobiles.printLibrary()
