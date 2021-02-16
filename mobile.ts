@@ -20,16 +20,21 @@ export class Mobile {
     }
 
 
-    public toString(){
-        console.log("The characteristics of the mobile "+ this.name +" are:" + "\n"+"  "+"Name: "+this.name+"\n"+"  "+"Model:"+ this.model+ "\n"+"  "+ "Trademark:"+  this.trademark+"\n"+"  "+"SD Size (GB):" + this.sdSize+ "\n" + "  "+ "Color:" + this.color+"\n"+ "  "+ "Is 5G?:"+this.is5G+ "\n"+ "  "+ "Number of Cameras:"+this.cameraNumber)
+    public toString() {
+        console.log("The characteristics of the mobile " + this.name + " are:" + "\n" + "  " + "Name: " + this.name + "\n" + "  " + "Model:" + this.model + "\n" + "  " + "Trademark:" + this.trademark + "\n" + "  " + "SD Size (GB):" + this.sdSize + "\n" + "  " + "Color:" + this.color + "\n" + "  " + "Is 5G?:" + this.is5G + "\n" + "  " + "Number of Cameras:" + this.cameraNumber)
+    }
+    public getName(): string {
+        return this.name;
     }
 
+    public setName(name: string) {
+        this.name = name;
+    }
     public getModel(): number {
         return this.model;
     }
 
-    public setModel(model: number
-    ) {
+    public setModel(model: number) {
         this.model = model;
     }
 
@@ -37,8 +42,7 @@ export class Mobile {
         return this.trademark;
     }
 
-    public setTrademark(trademark: string
-    ) {
+    public setTrademark(trademark: string) {
         this.trademark = trademark;
     }
 
@@ -46,8 +50,7 @@ export class Mobile {
         return this.sdSize;
     }
 
-    public setSdSize(sdSize: number
-    ) {
+    public setSdSize(sdSize: number) {
         this.sdSize = sdSize;
     }
 
@@ -55,8 +58,7 @@ export class Mobile {
         return this.color;
     }
 
-    public setColor(color: string
-    ) {
+    public setColor(color: string) {
         this.color = color;
     }
 
