@@ -84,6 +84,6 @@ export class Mobile {
         this.price = price;
     }
     public toString(): string {
-        return "The characteristics of the mobile " + this.name + " are:" + "\n" + "  " + "Name: " + this.name + "\n" + "  " + "Model:" + this.model + "\n" + "  " + "Trademark:" + this.trademark + "\n" + "  " + "SD Size (GB):" + this.sdSize + "\n" + "  " + "Color:" + this.color + "\n" + "  " + "Is 5G?:" + this.is5G + "\n" + "  " + "Number of Cameras:" + this.cameraNumber+"\n"
+        return "The characteristics of the mobile " + this.name + " are:" + "\n" + "  " + "Name: " + this.name + "\n" + "  " + "Model:" + this.model + "\n" + "  " + "Trademark:" + this.trademark + "\n" + "  " + "SD Size (GB):" + this.sdSize + "\n" + "  " + "Color:" + this.color + "\n" + "  " + "Is 5G?:" + this.is5G + "\n" + "  " + "Number of Cameras:" + this.cameraNumber + "\n"
     }
 }
