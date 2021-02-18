@@ -13,5 +13,6 @@ console.log(SamsungGalaxy10)
 console.log(mobiles)
 //Nokia3210.cameraNumber = 4;
 //Nokia3210.is5G =true
+//String de mobile
 console.log(Nokia3210.toString())
 console.log(mobiles.toString())
