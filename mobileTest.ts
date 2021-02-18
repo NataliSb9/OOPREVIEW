@@ -5,11 +5,13 @@ let iPhone3G: Mobile = new Mobile ("Iphone3G",3,"Apple",8, "negro", false, 2, 12
 let SamsungGalaxy10: Mobile = new Mobile ("Samsung Galaxy 10", 10, "Samsung", 32,"plata",true, 2, 200 )
 let mobiles: Mobile[] = [Nokia3210,iPhone3G,SamsungGalaxy10];
 
-console.log(Nokia3210.cameraNumber)
-console.log(Nokia3210.is5G)
+//console.log(Nokia3210.cameraNumber)
+//console.log(Nokia3210.is5G)
 console.log(Nokia3210)
 console.log(iPhone3G)
 console.log(SamsungGalaxy10)
 console.log(mobiles)
-Nokia3210.cameraNumber = 4;
-Nokia3210.is5G =true
+//Nokia3210.cameraNumber = 4;
+//Nokia3210.is5G =true
+console.log(Nokia3210.toString())
+console.log(mobiles.toString())
