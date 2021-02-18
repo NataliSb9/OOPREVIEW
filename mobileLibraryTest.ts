@@ -13,4 +13,6 @@ console.log(muchosMobiles.getName())
 console.log(muchosMobiles.getTotalPrice())
 muchosMobiles.setLocation("Barrio Sesamo")
 console.log(muchosMobiles.getLocation())
+
+//Metodo corregido
 muchosMobiles.printLibrary()
